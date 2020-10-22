@@ -37,6 +37,15 @@ let config = {
         ]
       },
       {
+        test: /\.s[ac]ss$/i,
+        exclude: /node_modules/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      },
+      {
         test: /\.(woff|woff2|eot|ttf|otf|png|svg|jpg|gif)$/,
         exclude: /node_modules/,
         use: [
