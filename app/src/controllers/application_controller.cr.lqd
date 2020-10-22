@@ -5,6 +5,6 @@ class ApplicationController < Amber::Controller::Base
   LAYOUT = "layout.ecr"
 
   def root
-    render "layouts/application.ecr"
+    render "layouts/application.ecr", path: "src"
   end
 end
