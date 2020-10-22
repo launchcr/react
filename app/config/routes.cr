@@ -28,7 +28,7 @@ Amber::Server.configure do
   end
 
   routes :web do
-    get "/", ApplicationController, :root
+    {{ run("../generate_routes") }}
   end
 
   routes :api, "/api" do
