@@ -7,7 +7,7 @@
 # > We recommend not modifying the order of the requires since the order will
 # affect the behavior of the application.
 
-require "amber"
+require "launch"
 require "./settings"
 require "./i18n"
 require "./database"
@@ -19,8 +19,6 @@ require "../src/models/**"
 require "../src/controllers/application_controller"
 require "../src/controllers/**"
 require "./routes"
-
-require "amber"
 
 require "../src/controllers/application_controller"
 require "../src/controllers/**"
