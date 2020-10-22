@@ -16,9 +16,9 @@ targets:
     main: lib/amber/src/amber/cli.cr
 
 dependencies:
-  amber:
-    github: amberframework/amber
-    branch: master
+  launch:
+    github: launchcr/launch
+    branch: launchcr
     #version: {{ amber_version }}
 
   granite:
