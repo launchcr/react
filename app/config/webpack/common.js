@@ -3,7 +3,7 @@ const path = require('path');
 
 let config = {
   entry: {
-    'main.bundle.js': path.resolve(__dirname, '../../src/pages/index.js'),
+    'main.bundle.js': path.resolve(__dirname, '../../src/pages/_app.js'),
     'main.bundle.css': path.resolve(__dirname, '../../src/styles/index.css')
   },
   output: {

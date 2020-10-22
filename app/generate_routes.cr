@@ -7,9 +7,9 @@ output = ""
 
 directory.each do |f|
   output += if without_ext(f) == "index"
-              "get \"/\", ReactController, :index\n"
+              "get \"/\", ApplicationController, :root\n"
             else
-              "get \"/#{without_ext(f)}\", ReactController, :#{without_ext(f)}\n"
+              output += "get \"/#{without_ext(f)}\", ApplicationController, :root\n"
             end
 end
 puts output
